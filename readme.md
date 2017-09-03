@@ -2,3 +2,13 @@ Now it's time for you to get started. It's easy. First, change directory into yo
 get there. Once in your project folder, simply run your new app with au run. Your app will run fully bundled. If you would like to have it auto-refresh whenever you make changes to
 your HTML, JavaScript or CSS, simply use the --watch flag If you want to build your app for production, run au build --env prod. That's just about all there is to it. If
 you need help, simply run au help.
+
+### Getting Started
+
+* install node
+* install npm
+* install aurelia-cli
+* install http-server
+* run au build
+* run http-server
+* go to the localhost index.html
