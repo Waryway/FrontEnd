@@ -8,7 +8,5 @@ you need help, simply run au help.
 * install node
 * install npm
 * install aurelia-cli
-* install http-server
 * run au build
-* run http-server
-* go to the localhost index.html
+* au run --watch

@@ -1,12 +1,11 @@
 export class App {
   constructor() {
-    this.message = 'Hello World!';
+    this.message = 'WaryWay';
   }
   configureRouter(config, router){
     config.title = 'Contacts';
     config.map([
-      { route: '',              moduleId: 'no-selection',   title: 'Select'},
-      { route: 'contacts/:id',  moduleId: 'contact-detail', name:'contacts' }
+      { route: '',              moduleId: 'home',   title: 'Select'}
     ]);
 
     this.router = router;
