@@ -1,5 +1,5 @@
 export class Home {
     constructor() {
-        this.message = "Welcome!.";
+        this.message = "Welcome!";
     }
 }
