@@ -1,5 +1,27 @@
 <template>
-    <div class="navbar">
-        <p>navigation</p>
-    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">${website}</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" route-href="route: about/home;">About
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#about/story">Story</a></li>
+                        <li><a href="#about/contact;">Contact</a></li>
+                        <li><a href="#about/privacy;">Privacy Policy</a></li>
+                    </ul>
+                </li>
+                <li><a route-href="route: store;">Store</a></li>
+                <li><a href="http://kylewiering.waryway.com">Blog</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
 </template>
