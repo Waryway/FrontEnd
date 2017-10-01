@@ -1,0 +1,30 @@
+<template>
+    <require from="./modals/login"></require>
+    <!-- Modal -->
+    <div if.bind="login">
+        <login></login>
+    </div>
+    <div if.bind="defaultModal">
+        <div id="${modalTarget}" class="my-modal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" click.delegate="changeSignInModalState()">&times;</button>
+                        <h4 class="modal-title">${modalHeader}</h4>
+                    </div>
+                    <div class="modal-body">
+                            <p>${modalContent}</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" click.delegate="changeSignInModalState()">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</template>

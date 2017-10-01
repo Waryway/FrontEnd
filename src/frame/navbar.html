@@ -1,4 +1,5 @@
 <template>
+    <require from="./modal"></require>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -18,11 +19,19 @@
                 <li class="${router.currentInstruction.config.title == 'Store' ? 'active' : ''}"><a route-href="route: store;">Store</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+                <!--<li><a><span class="glyphicon glyphicon-user"></span></a></li>-->
+                <li><a click.delegate="changeSignInModalState('login')"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 <li><a href="http://kylewiering.waryway.com">Blog</a></li>
             </ul>
         </div>
     </nav>
     <div></div>
+    <div if.bind="signInModalVisible">
+        <modal modal-header="some heard" modal-content="" modal-target="${modalTarget}" modalcloseevent.delegate="changeSignInModalState()"></modal>
+    </div>
+
+
+
+
 </template>

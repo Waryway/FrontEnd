@@ -9,4 +9,7 @@ export class Router {
         this.router = router;
     };
 
+    activate(params, navigationInstruction) {
+        this.story = 'active';
+    }
 }
