@@ -1,4 +1,4 @@
-export class AboutHomes {
+export class AboutHome {
     constructor() {
         this.message = "About!.";
     }
