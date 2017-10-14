@@ -1,5 +1,5 @@
 export class AboutContact {
     constructor() {
-        this.message = "Contact!.";
+        this.heading = "Contact Waryway";
     }
 }

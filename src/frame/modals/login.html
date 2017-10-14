@@ -9,10 +9,20 @@
                     <h4 class="modal-title">Please Log in</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Login Form Goes Here!</p>
+                    <form class="form-signin">
+                        <label for="inputEmail" class="sr-only">Email</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="true" autofocus="">
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="true">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" click.delegate="changeSignInModalState()">Close</button>
+                    <button class="btn btn-primary btn-block" type="submit">Sign in</button><button type="button" class="btn btn-default btn-block" click.delegate="changeSignInModalState()">Cancel</button>
                 </div>
             </div>
         </div>
