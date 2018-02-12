@@ -44,3 +44,32 @@ h1 {
 
 }
 
+div.padded-text {
+    color: #444555;
+    background-color: #ddd;
+    margin: auto 0px;
+    width: 100%;
+    padding: 50px;
+}
+
+
+
+footer {
+    background-color: #fff;
+    width:100%;
+    bottom:0;
+    border-color: #e7e7e7;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+p.normal {
+    font-style: normal;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+p.bold {
+    font-weight: bold;
+}

@@ -78,19 +78,27 @@
             "name": "bootstrap",
             "path": "../node_modules/bootstrap/dist",
             "main": "js/bootstrap.min",
-            "deps": ["jquery"],
+            "deps": [
+              "jquery"
+            ],
             "exports": "$",
             "resources": [
               "css/bootstrap.css"
             ]
+          },
+          {
+            "name": "aurelia-http-client",
+            "main": "aurelia-http-client",
+            "path": "../node_modules/aurelia-http-client/dist/amd",
+            "resources": []
           }
         ]
       }
     ],
     "copyFiles": {
       "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2": "bootstrap/fonts",
-      "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff":  "bootstrap/fonts",
-      "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf":   "bootstrap/fonts"
+      "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff": "bootstrap/fonts",
+      "node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf": "bootstrap/fonts"
     },
     "loader": {
       "type": "require",

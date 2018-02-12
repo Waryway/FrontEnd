@@ -16,6 +16,7 @@
                         <li><a href="#about/privacy">Privacy Policy</a></li>
                     </ul>
                 </li>
+                <li class="${router.currentInstruction.config.title == 'Review' ? 'active' : ''}"><a route-href="route: review;">Review</a></li>
                 <li class="${router.currentInstruction.config.title == 'Store' ? 'active' : ''}"><a route-href="route: store;">Store</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -30,8 +31,5 @@
     <div if.bind="signInModalVisible">
         <modal modal-header="some heard" modal-content="" modal-target="${modalTarget}" modalcloseevent.delegate="changeSignInModalState()"></modal>
     </div>
-
-
-
 
 </template>
